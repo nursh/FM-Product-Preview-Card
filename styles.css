@@ -4,7 +4,6 @@
   --gun-metal-color: #1C232B;
   --green-color: #3D8186;
   --dark-green-color: #1A4032;
-  --white-color: #fff;
   --aurometal-color: #6C7289;
 
   /* Font Sizes */
@@ -16,17 +15,50 @@
   /* Font Family */
   --montserrat: 'Montserrat', sans-serif;
   --fraunces: 'Fraunces', serif;
+
+  box-sizing: border-box;
 }
 
 
 body {
   background-color: var(--main-bg-color);
   font-family: var(--montserrat);
+  font-weight: 500;
 }
+
+main {
+  width: 375px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 30px 25px 25px;
+  border-radius: 10px;
+}
+
+.tag {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: var(--aurometal-color);
+}
+
+.description {
+  color: var(--aurometal-color);
+  line-height: 23px;
+  font-size: var(--body);
+}
+
+h1 {
+  font-family: var(--fraunces);
+  font-size: var(--large);
+  color: var(--gun-metal-color);
+}
+
+/** Price Section**/
 
 .price {
   display: flex;
   align-items: center;
+  margin-top: 24px;
+  margin-bottom: 20px;
 }
 
 .price__text {
@@ -43,4 +75,30 @@ body {
 
 .price__text--crossed {
   text-decoration: line-through;
+}
+
+
+/** Cart Button **/
+
+button {
+  border: none;
+  background-color: var(--green-color);
+  color: white;
+  padding: 15px 0;
+  font-size: var(--body);
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button img {
+  margin-right: 12px;
+}
+
+button:hover {
+  background-color: var(--dark-green-color);
 }
