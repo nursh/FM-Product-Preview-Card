@@ -23,3 +23,24 @@ body {
   background-color: var(--main-bg-color);
   font-family: var(--montserrat);
 }
+
+.price {
+  display: flex;
+  align-items: center;
+}
+
+.price__text {
+  font-size: var(--large);
+  font-family: var(--fraunces);
+  color: var(--green-color)
+}
+
+.price__text--small {
+  font-size: var(--small);
+  color: var(--aurometal-color);
+  margin-left: 24px;
+}
+
+.price__text--crossed {
+  text-decoration: line-through;
+}
