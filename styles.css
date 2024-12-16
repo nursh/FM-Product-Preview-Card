@@ -8,14 +8,19 @@
 
   /* Font Sizes */
   --large: 32px;
+  --body: 14px;
   --tag: 12px;
   --small: 13px;
-  --body: 14px;
 
   /* Font Family */
   --montserrat: 'Montserrat', sans-serif;
   --fraunces: 'Fraunces', serif;
 
+}
+
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -23,33 +28,46 @@
 body {
   background-color: var(--main-bg-color);
   font-family: var(--montserrat);
-  font-weight: 500;
 }
 
 main {
-  width: 375px;
+  max-width: 343px;
   margin: 0 auto;
-  background-color: white;
-  padding: 30px 25px 25px;
-  border-radius: 10px;
+  
+  display: grid;
+}
+
+.product-body {
+  background-color: #fff;
+  padding: 24px;
+}
+
+.product-image img {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .tag {
   text-transform: uppercase;
   letter-spacing: 5px;
   color: var(--aurometal-color);
+  font-size: var(--tag);
 }
 
 .description {
   color: var(--aurometal-color);
   line-height: 23px;
   font-size: var(--body);
+  margin-bottom: 24px;
 }
 
 h1 {
   font-family: var(--fraunces);
   font-size: var(--large);
   color: var(--gun-metal-color);
+  margin-top: 12px;
+  margin-bottom: 16px;
 }
 
 /** Price Section**/
@@ -64,19 +82,15 @@ h1 {
 .price__text {
   font-size: var(--large);
   font-family: var(--fraunces);
-  color: var(--green-color)
+  color: var(--green-color);
 }
 
 .price__text--small {
   font-size: var(--small);
   color: var(--aurometal-color);
   margin-left: 24px;
-}
-
-.price__text--crossed {
   text-decoration: line-through;
 }
-
 
 /** Cart Button **/
 
