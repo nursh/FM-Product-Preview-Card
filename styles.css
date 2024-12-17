@@ -42,7 +42,8 @@ main {
   padding: 24px;
 }
 
-.product-image img {
+.product-image {
+  display: block;
   width: 100%;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -115,4 +116,24 @@ button img {
 
 button:hover {
   background-color: var(--dark-green-color);
+}
+
+/** Media Queries */
+
+@media (min-width: 800px) {
+
+  main {
+    grid-template-columns: 1fr 1fr;
+    max-width: 600px;
+  }
+
+  .product-image {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 10px;
+  }
+
+  .product-body {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
 }
